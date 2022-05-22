@@ -1,0 +1,31 @@
+img {
+  border-radius: 999px;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 32px;
+}
+
+main {
+  height: 100vh;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+h1[data-welcome] {
+  margin: 0;
+}
+
+h2[data-name] {
+  margin: 0;
+  padding-left: 16px;
+}
+
+h3[data-introduction] {
+  text-align: center;
+}
