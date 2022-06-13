@@ -27,14 +27,6 @@
 
   /* text */
   --color-primary-text: #3a3a3a;
-
-  /* gradients */
-  --color-primary-gradient: linear-gradient(
-    90deg,
-    hsl(0, 0%, 83%) 0%,
-    hsl(0, 0%, 83%) 1%,
-    hsl(0, 0%, 88%) 26%
-  );
 }
 
 html {
@@ -46,7 +38,7 @@ p,
 h1,
 h2 {
   margin: 0;
-  /* background: var(--color-primary-gradient); */
+  font-weight: normal;
 }
 
 img {

@@ -6,7 +6,7 @@ import audioseiumLogo from "~/../public/assets/audioseium.svg";
 import rvneLogo from "~/../public/assets/abstract 2.png";
 import modelingLogo from "~/../public/assets/abstract 1.png";
 import jakeLogo from "~/../public/assets/jakesjordan.svg";
-import styles from "~/styles/global.css";
+import styles from "~/styles/routes/index.css";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
@@ -53,79 +53,97 @@ export default function Index() {
         </button>
       </nav> */}
 
-      <main>
-        <section>
-          <p>Hey,</p>
-          <p>I'm Jake</p>
+      <main className="main">
+        <section className="welcome">
+          <div className="welcome__introduction">
+            <p>Hey,</p>
+            <p className="welcome__introduction--line2">I'm Jake</p>
+          </div>
 
-          <img src={jakesjordan} alt="jake jordan smiling" />
+          <img
+            className="welcome__image"
+            src={jakesjordan}
+            alt="jake jordan smiling"
+          />
 
-          <p>software devloper</p>
-          <p>musician </p>
-          <p>creator</p>
+          <div className="welcome__information">
+            <p className="welcome__attribute">software developer</p>
+            <p className="welcome__attribute">musician </p>
+            <p className="welcome__attribute">creator</p>
+          </div>
         </section>
 
-        <section>
-          <header>
+        <section className="section">
+          <header className="section__header">
             <h1>Projects</h1>
           </header>
 
-          <article>
-            <header>
-              <h2>RVNE</h2>
-            </header>
+          <div className="cards">
+            <article className="card">
+              <header className="card__header">
+                <h2>RVNE</h2>
+              </header>
 
-            <img src={rvneLogo} alt="" />
-            <p>a parametric flow based programing tool on the web</p>
-          </article>
+              <img className="card__image" src={rvneLogo} alt="" />
+              <p className="card__information">
+                a parametric flow based programing tool on the web
+              </p>
+            </article>
 
-          <article>
-            <header>
-              <h2>Audioseium</h2>
-            </header>
+            <article className="card">
+              <header className="card__header">
+                <h2>Audioseium</h2>
+              </header>
 
-            <img src={audioseiumLogo} alt="" />
-            <p>a library of my personal music</p>
-          </article>
+              <img className="card__image" src={audioseiumLogo} alt="" />
+              <p className="card__information">
+                a library of my personal music
+              </p>
+            </article>
 
-          <article>
-            <header>
-              <h2>Personal Site</h2>
-            </header>
+            <article className="card">
+              <header className="card__header">
+                <h2>Personal Site</h2>
+              </header>
 
-            <img src={jakeLogo} alt="" />
-            <p>my website showcasing my projects and interests</p>
-          </article>
+              <img className="card__image" src={jakeLogo} alt="" />
+              <p className="card__information">
+                my website showcasing my projects and interests
+              </p>
+            </article>
+          </div>
         </section>
 
-        <section>
-          <header>
+        <section className="section">
+          <header className="section__header">
             <h1>Interests</h1>
           </header>
 
-          <article>
-            <header>
-              <h2>3D Art</h2>
-            </header>
+          <div className="cards">
+            <article className="card">
+              <header className="card__header">
+                <h2>3D Art</h2>
+              </header>
 
-            <img src={modelingLogo} alt="" />
-          </article>
+              <img className="card__image" src={modelingLogo} alt="" />
+            </article>
 
-          <article>
-            <header>
-              <h2>Game Design</h2>
-            </header>
+            <article className="card">
+              <header className="card__header">
+                <h2>Game Design</h2>
+              </header>
 
-            <img src={modelingLogo} alt="" />
-          </article>
+              <img className="card__image" src={modelingLogo} alt="" />
+            </article>
+          </div>
         </section>
 
-        <section>
-          <header>
+        <section className="section">
+          <header className="section__header">
             <h1>Resume</h1>
           </header>
 
-          <img src={resume} alt="jake's resume" />
+          <img className="resume__image" src={resume} alt="jake's resume" />
         </section>
       </main>
     </React.Fragment>
