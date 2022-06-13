@@ -1,12 +1,12 @@
-// import { Link } from "@remix-run/react";
 import React from "react";
 import jakesjordan from "~/../public/assets/jakesjordan.png";
 import resume from "~/../public/assets/Jacob Jordan Resume.png";
 import audioseiumLogo from "~/../public/assets/audioseium.svg";
-import rvneLogo from "~/../public/assets/abstract 2.png";
-import modelingLogo from "~/../public/assets/abstract 1.png";
+import rvneLogo from "~/../public/assets/rvne.png";
+import artLogo from "~/../public/assets/3dart.png";
 import jakeLogo from "~/../public/assets/jakesjordan.svg";
 import styles from "~/styles/routes/index.css";
+import gameLogo from "~/../public/assets/shellySpace.jpg";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
@@ -15,44 +15,6 @@ export function links() {
 export default function Index() {
   return (
     <React.Fragment>
-      {/* <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-
-          <li>
-            <Link to="#projects">Projects</Link>
-          </li>
-
-          <li>
-            <Link to="#about">about me</Link>
-          </li>
-
-          <li>
-            <Link to="#resume">Resume</Link>
-          </li>
-        </ul>
-
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-      </nav> */}
-
       <main className="main">
         <section className="welcome">
           <div className="welcome__introduction">
@@ -97,18 +59,19 @@ export default function Index() {
 
               <img className="card__image" src={audioseiumLogo} alt="" />
               <p className="card__information">
-                a library of my personal music
+                an audio library filled with all of my musical works
               </p>
             </article>
 
             <article className="card">
               <header className="card__header">
-                <h2>Personal Site</h2>
+                <h2>jakesjordan.com</h2>
               </header>
 
               <img className="card__image" src={jakeLogo} alt="" />
               <p className="card__information">
-                my website showcasing my projects and interests
+                a website introducing myself and showcasing what I enjoy working
+                on
               </p>
             </article>
           </div>
@@ -125,7 +88,7 @@ export default function Index() {
                 <h2>3D Art</h2>
               </header>
 
-              <img className="card__image" src={modelingLogo} alt="" />
+              <img className="card__image" src={artLogo} alt="" />
             </article>
 
             <article className="card">
@@ -133,12 +96,12 @@ export default function Index() {
                 <h2>Game Design</h2>
               </header>
 
-              <img className="card__image" src={modelingLogo} alt="" />
+              <img className="card__image" src={gameLogo} alt="" />
             </article>
           </div>
         </section>
 
-        <section className="section">
+        <section>
           <header className="section__header">
             <h1>Resume</h1>
           </header>
